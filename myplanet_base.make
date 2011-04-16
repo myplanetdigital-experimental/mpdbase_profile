@@ -1,5 +1,10 @@
 core = 6.x
 
+; Required for Profiler to be used for installation profile
+libraries[profiler][download][type] = git
+libraries[profiler][download][url] = http://git.drupal.org/project/profiler.git
+libraries[profiler][download][tag] = 6.x-2.0-beta2
+
 includes[development] = myplanet_development.make
 
 projects[cck][subdir] = contrib
