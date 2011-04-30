@@ -1,0 +1,9 @@
+core = 6.x
+api = 2
+
+projects[drupal] = 6.20
+
+projects[myplanet_base][type] = profile
+projects[myplanet_base][download][type] = git
+projects[myplanet_base][download][url] = git@github.com:myplanetdigital/myplanet_base.git
+projects[myplanet_base][download][branch] = master
