@@ -1,8 +1,10 @@
 ; $Id$
 
 name = Myplanet Base
-description = A base installation profile on while to build projects.
-core = 6.x
+description = A base installation profile on which to build projects.
+core = 7.x
+; Uncomment the line below when using this profile as a base install profile
+; base = myplanet_base
 theme = omega
 
 ; DEPENDENCIES
@@ -32,24 +34,24 @@ dependencies[] = features
 
 ; USERS
 
-users[webadmin][uid] = 1
-users[webadmin][name] = webadmin
-users[webadmin][mail] = YOUR.EMAIL@myplanetdigital.com
-users[webadmin][status] = 1
+;users[webadmin][uid] = 1
+;users[webadmin][name] = webadmin
+;users[webadmin][mail] = YOUR.EMAIL@myplanetdigital.com
+;users[webadmin][status] = 1
 
-users[test.admin][uid] = 2
-users[test.admin][name] = test.admin
-users[test.admin][mail] = test.admin@example.com
-users[test.admin][roles] = content admin
-users[test.admin][status] = 1
+;users[test.admin][uid] = 2
+;users[test.admin][name] = test.admin
+;users[test.admin][mail] = test.admin@example.com
+;users[test.admin][roles] = content admin
+;users[test.admin][status] = 1
 
-users[test.user][uid] = 3
-users[test.user][name] = test.user
-users[test.user][mail] = test.user@example.com
+;users[test.user][uid] = 3
+;users[test.user][name] = test.user
+;users[test.user][mail] = test.user@example.com
 ; users[test.user][roles] = 
-users[test.user][status] = 1
+;users[test.user][status] = 1
 
 ; VARIABLES
 
-variables[site_name] = Myplanet Base Site
-variables[site_mail] = YOUR.EMAIL@myplanetdigital.com
+;variables[site_name] = Myplanet Base Site
+;variables[site_mail] = YOUR.EMAIL@myplanetdigital.com
