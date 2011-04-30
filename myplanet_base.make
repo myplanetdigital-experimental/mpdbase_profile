@@ -40,14 +40,14 @@ projects[views][version] = 3.0-beta3
 projects[coder][subdir] = contrib
 projects[coder][version] = 1.0-beta6
 
-projects[coder_tough_love][subdir] = contrib
-; projects[coder_tough_love][version] = 6.x-1.x-dev
-projects[coder_tough_love][type] = module
-projects[coder_tough_love][download][type] = git
-projects[coder_tough_love][download][url] = http://git.drupal.org/project/coder_tough_love.git
-projects[coder_tough_love][download][revision] = cc33440b440d66e12d8c712010bc4283b78c75bb
+projects[environment][subdir] = contrib
+; projects[environment][version] = 6.x-1.x-dev
+projects[environment][type] = module
+projects[environment][download][type] = git
+projects[environment][download][url] = http://git.drupal.org/project/environment.git
+projects[environment][download][revision] = cc33440b440d66e12d8c712010bc4283b78c75bb
 ; Upgrades D6 version to D7: http://drupal.org/node/728400#comment-2658714
-projects[coder_tough_love][patch][] = http://drupal.org/files/issues/728400.patch
+projects[environment][patch][] = http://drupal.org/files/issues/728400.patch
 
 projects[devel][subdir] = contrib
 projects[devel][version] = 1.0
@@ -64,6 +64,15 @@ projects[drupalforfirebug][version] = 1.2
 
 projects[environment_indicator][subdir] = contrib
 projects[environment_indicator][version] = 1.0-alpha1
+
+projects[environment][subdir] = contrib
+; projects[environment][version] = 6.x-1.x-dev
+projects[environment][type] = module
+projects[environment][download][type] = git
+projects[environment][download][url] = http://git.drupal.org/project/environment.git
+projects[environment][download][revision] = dd1144222de5bb380d4e3012990c7fd57d0c2484
+; Upgrades D6 version to D7: http://drupal.org/node/1123996#comment-4402248
+projects[environment][patch][] = http://drupal.org/files/issues/0002-basic-port-to-Drupal-7.patch
 
 projects[fpa][subdir] = contrib
 projects[fpa][version] = 2.0
