@@ -28,7 +28,7 @@ dependencies[] = strongarm
 dependencies[] = features
 
 ; Features, Myplanet Base
-dependencies[] = feature_myplanet_sitewide
+; dependencies[] = feature_myplanet_sitewide
 
 ; USERS
 
