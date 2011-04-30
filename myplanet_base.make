@@ -4,7 +4,7 @@ api = 2
 ; Required for Profiler to be used for installation profile
 libraries[profiler][download][type] = git
 libraries[profiler][download][url] = http://git.drupal.org/project/profiler.git
-libraries[profiler][download][revision] = dede4f9310e16facc42b259529855e0ed27354c7
+libraries[profiler][download][revision] = e10ff3ea023cb577d712a713820dac4bbbe429c4
 
 ; MODULES
 
@@ -40,14 +40,14 @@ projects[views][version] = 3.0-beta3
 projects[coder][subdir] = contrib
 projects[coder][version] = 1.0-beta6
 
-projects[environment][subdir] = contrib
-; projects[environment][version] = 6.x-1.x-dev
-projects[environment][type] = module
-projects[environment][download][type] = git
-projects[environment][download][url] = http://git.drupal.org/project/environment.git
-projects[environment][download][revision] = cc33440b440d66e12d8c712010bc4283b78c75bb
+projects[coder_tough_love][subdir] = contrib
+; projects[coder_tough_love][version] = 6.x-1.x-dev
+projects[coder_tough_love][type] = module
+projects[coder_tough_love][download][type] = git
+projects[coder_tough_love][download][url] = http://git.drupal.org/project/coder_tough_love.git
+projects[coder_tough_love][download][revision] = cc33440b440d66e12d8c712010bc4283b78c75bb
 ; Upgrades D6 version to D7: http://drupal.org/node/728400#comment-2658714
-projects[environment][patch][] = http://drupal.org/files/issues/728400.patch
+projects[coder_tough_love][patch][] = http://drupal.org/files/issues/728400.patch
 
 projects[devel][subdir] = contrib
 projects[devel][version] = 1.0
