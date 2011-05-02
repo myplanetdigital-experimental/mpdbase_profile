@@ -161,6 +161,9 @@ projects[views_bulk_operations][download][url] = http://ftp.drupal.org/files/pro
 projects[context][subdir] = contrib
 projects[context][version] = 3.0-beta1
 
+projects[debut][subdir] = contrib
+projects[debut][version] = 1.0-beta1
+
 projects[distro][subdir] = contrib
 projects[distro][version] = 1.0-rc1
 
