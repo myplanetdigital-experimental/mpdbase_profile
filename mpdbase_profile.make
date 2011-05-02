@@ -8,24 +8,24 @@ libraries[profiler][directory_name] = profiler
 
 ; CUSTOMIZED PROJECTS
 
-projects[myplanet_theme][type] = theme
-projects[myplanet_theme][download][type] = git
-projects[myplanet_theme][download][url] = git@github.com:myplanetdigital/Omega.git
-projects[myplanet_theme][download][branch] = mpdbase_theme
+projects[mpdbase_theme][type] = theme
+projects[mpdbase_theme][download][type] = git
+projects[mpdbase_theme][download][url] = git@github.com:myplanetdigital/Omega.git
+projects[mpdbase_theme][download][branch] = mpdbase_theme
 ; "subtree" flag needs this patch to drush_make: http://drupal.org/node/1074748#comment-4143762
-projects[myplanet_theme][download][subtree] = mpdbase_theme
+projects[mpdbase_theme][download][subtree] = mpdbase_theme
 
-projects[myplanet_environment][type] = module
-projects[myplanet_environment][subdir] = custom
-projects[myplanet_environment][download][type] = git
-projects[myplanet_environment][download][url] = git@github.com:myplanetdigital/myplanet_environment.git
-projects[myplanet_environment][download][branch] = 7.x-1.x
+projects[mpdbase_environment][type] = module
+projects[mpdbase_environment][subdir] = custom
+projects[mpdbase_environment][download][type] = git
+projects[mpdbase_environment][download][url] = git@github.com:myplanetdigital/mpdbase_environment.git
+projects[mpdbase_environment][download][branch] = 7.x-1.x
 
-projects[myplanet_features][type] = module
-projects[myplanet_features][directory_name] = features
-projects[myplanet_features][download][type] = git
-projects[myplanet_features][download][url] = https://github.com/myplanetdigital/myplanet_features
-projects[myplanet_features][download][branch] = 7.x-1.x
+projects[mpdbase_features][type] = module
+projects[mpdbase_features][directory_name] = features
+projects[mpdbase_features][download][type] = git
+projects[mpdbase_features][download][url] = git@github.com:myplanetdigital/mpdbase_environment.git
+projects[mpdbase_features][download][branch] = 7.x-1.x
 
 ; MODULES
 
