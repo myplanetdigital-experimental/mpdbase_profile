@@ -2,9 +2,30 @@ core = 7.x
 api = 2
 
 ; Required for Profiler to be used for installation profile
-libraries[profiler][download][type] = git
-libraries[profiler][download][url] = http://git.drupal.org/project/profiler.git
-libraries[profiler][download][revision] = e10ff3ea023cb577d712a713820dac4bbbe429c4
+libraries[profiler][download][type] = file
+libraries[profiler][download][url] = http://drupalcode.org/project/profiler.git/snapshot/e10ff3ea023cb577d712a713820dac4bbbe429c4.tar.gz
+libraries[profiler][directory_name] = profiler
+
+; CUSTOMIZED PROJECTS
+
+projects[myplanet_theme][type] = theme
+projects[myplanet_theme][download][type] = git
+projects[myplanet_theme][download][url] = git@github.com:myplanetdigital/Omega.git
+projects[myplanet_theme][download][branch] = mpdbase_theme
+; "subtree" flag needs this patch to drush_make: http://drupal.org/node/1074748#comment-4143762
+projects[myplanet_theme][download][subtree] = mpdbase_theme
+
+projects[myplanet_environment][type] = module
+projects[myplanet_environment][subdir] = custom
+projects[myplanet_environment][download][type] = git
+projects[myplanet_environment][download][url] = git@github.com:myplanetdigital/myplanet_environment.git
+projects[myplanet_environment][download][branch] = 7.x-1.x
+
+projects[myplanet_features][type] = module
+projects[myplanet_features][directory_name] = features
+projects[myplanet_features][download][type] = git
+projects[myplanet_features][download][url] = https://github.com/myplanetdigital/myplanet_features
+projects[myplanet_features][download][branch] = 7.x-1.x
 
 ; MODULES
 
@@ -71,8 +92,8 @@ projects[environment][type] = module
 projects[environment][download][type] = git
 projects[environment][download][url] = http://git.drupal.org/project/environment.git
 projects[environment][download][revision] = dd1144222de5bb380d4e3012990c7fd57d0c2484
-; Upgrades D6 version to D7: http://drupal.org/node/1123996#comment-4402248
-projects[environment][patch][] = http://drupal.org/files/issues/0002-basic-port-to-Drupal-7.patch
+; Upgrades D6 version to D7: http://drupal.org/node/1123996
+projects[environment][patch][] = http://drupal.org/files/issues/1123996-8_default-workflow-description.patch
 
 projects[fpa][subdir] = contrib
 projects[fpa][version] = 2.0
@@ -140,6 +161,9 @@ projects[views_bulk_operations][download][url] = http://ftp.drupal.org/files/pro
 projects[context][subdir] = contrib
 projects[context][version] = 3.0-beta1
 
+projects[distro][subdir] = contrib
+projects[distro][version] = 1.0-rc1
+
 projects[features][subdir] = contrib
 projects[features][version] = 1.0-beta2
 
@@ -151,18 +175,30 @@ projects[features_override][version] = 1.0-beta1
 ; projects[features_plumber][subdir] = contrib
 ; projects[features_plumber][version] = 1.x-dev
 
+projects[server_sentry][subdir] = contrib
+projects[server_sentry][version] = 1.x-dev
+
 ; SANDBOX - Features Customize module: http://drupal.org/sandbox/nedjo/1118098
 
 projects[strongarm][subdir] = contrib
 projects[strongarm][version] = 2.0-beta2
 
+; ANALYTICS
+
+projects[google_analytics][subdir] = contrib
+projects[google_analytics][version] = 1.2
+
+projects[clicktale][subdir] = contrib
+projects[clicktale][version] = 1.0-beta1
+; Slight changes to .info file and added makefile: http://drupal.org/node/1144002
+projects[clicktale][patch][] = http://drupal.org/files/issues/1144002-3_package-config-in-info-and-makefile-d7.patch
+
+; SECURITY
+
 ; SEO
 
 projects[globalredirect][subdir] = contrib
 projects[globalredirect][version] = 1.3
-
-projects[google_analytics][subdir] = contrib
-projects[google_analytics][version] = 1.2
 
 ; projects[metatags][subdir] = contrib
 ; projects[metatags][version] = 1.x-dev

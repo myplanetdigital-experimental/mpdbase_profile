@@ -4,12 +4,19 @@ name = Myplanet Base
 description = A base installation profile on which to build projects.
 core = 7.x
 ; Uncomment the line below when using this profile as a base install profile
-; base = myplanet_base
-theme = omega
+; base = mpdbase_profile
+theme = mpdbase_theme
 
 ; DEPENDENCIES
 
-;Core, required
+; Theme
+dependencies[bartik] = 0
+dependencies[] = mpdbase_theme
+dependencies[] = rubik
+variables[theme_default] = mpdbase_theme
+variables[admin_theme] = rubik
+
+; Core, required
 dependencies[] = block
 dependencies[] = filter
 dependencies[] = node
@@ -30,7 +37,7 @@ dependencies[] = strongarm
 dependencies[] = features
 
 ; Features, Myplanet Base
-; dependencies[] = feature_myplanet_sitewide
+dependencies[] = feature_mpdbase_sitewide
 
 ; USERS
 
