@@ -164,8 +164,8 @@ projects[context][version] = 3.0-beta1
 projects[debut][subdir] = contrib
 projects[debut][version] = 1.0-beta1
 
-projects[distro][subdir] = contrib
-projects[distro][version] = 1.0-rc1
+; projects[distro][subdir] = contrib
+; projects[distro][version] = 6.x-1.0-rc1
 
 projects[features][subdir] = contrib
 projects[features][version] = 1.0-beta2
@@ -175,8 +175,8 @@ projects[features][version] = 1.0-beta2
 projects[features_override][subdir] = contrib
 projects[features_override][version] = 1.0-beta1
 
-; projects[features_plumber][subdir] = contrib
-; projects[features_plumber][version] = 1.x-dev
+projects[features_plumber][subdir] = contrib
+projects[features_plumber][version] = 1.x-dev
 
 projects[server_sentry][subdir] = contrib
 projects[server_sentry][version] = 1.x-dev
