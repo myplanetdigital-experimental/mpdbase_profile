@@ -178,8 +178,8 @@ projects[features_override][version] = 1.0-beta1
 projects[features_plumber][subdir] = contrib
 projects[features_plumber][version] = 1.x-dev
 
-projects[server_sentry][subdir] = contrib
-projects[server_sentry][version] = 1.x-dev
+projects[sentry_server][subdir] = contrib
+projects[sentry_server][version] = 1.x-dev
 
 ; SANDBOX - Features Customize module: http://drupal.org/sandbox/nedjo/1118098
 
