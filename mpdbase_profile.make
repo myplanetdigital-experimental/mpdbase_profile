@@ -178,8 +178,8 @@ projects[features_override][version] = 1.0-beta1
 projects[features_plumber][subdir] = contrib
 projects[features_plumber][version] = 1.x-dev
 
-projects[sentry_server][subdir] = contrib
-projects[sentry_server][version] = 1.x-dev
+; projects[sentry_server][subdir] = contrib
+; projects[sentry_server][version] = 6.x-1.x-dev
 
 ; SANDBOX - Features Customize module: http://drupal.org/sandbox/nedjo/1118098
 
@@ -192,9 +192,12 @@ projects[google_analytics][subdir] = contrib
 projects[google_analytics][version] = 1.2
 
 projects[clicktale][subdir] = contrib
-projects[clicktale][version] = 1.0-beta1
+projects[clicktale][type] = module
+projects[clicktale][download][type] = git
+projects[clicktale][download][url] = http://git.drupal.org/project/clicktale.git
+projects[clicktale][download][tag] = 7.x-1.0-beta1
 ; Slight changes to .info file and added makefile: http://drupal.org/node/1144002
-projects[clicktale][patch][] = http://drupal.org/files/issues/1144002-3_package-config-in-info-and-makefile-d7.patch
+projects[clicktale][patch][] = http://drupal.org/files/issues/1144002-5_package-config-in-info-and-makefile-d7.patch
 
 ; SECURITY
 
