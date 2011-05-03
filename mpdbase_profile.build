@@ -3,7 +3,7 @@ api = 2
 
 projects[drupal] = 7.0
 
-projects[myplanet_base][type] = profile
-projects[myplanet_base][download][type] = git
-projects[myplanet_base][download][url] = git@github.com:myplanetdigital/mpdbase_profile.git
-projects[myplanet_base][download][branch] = 7.x-1.x
+projects[mpdbase_profile][type] = profile
+projects[mpdbase_profile][download][type] = git
+projects[mpdbase_profile][download][url] = git@github.com:myplanetdigital/mpdbase_profile.git
+projects[mpdbase_profile][download][branch] = 7.x-1.x
