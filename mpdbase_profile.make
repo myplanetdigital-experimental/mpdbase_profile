@@ -192,7 +192,7 @@ projects[google_analytics][subdir] = contrib
 projects[google_analytics][version] = 1.2
 
 projects[clicktale][subdir] = contrib
-projects[clicktale][version] = 1.0-beta
+projects[clicktale][version] = 1.0-beta1
 
 libraries[clicktale][download][type] = file
 libraries[clicktale][download][url] = http://www.clicktale.com/integration/ClickTalePHPIntegrationModule_latest.zip
