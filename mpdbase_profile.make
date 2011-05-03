@@ -24,7 +24,7 @@ projects[mpdbase_environment][download][branch] = 7.x-1.x
 projects[mpdbase_features][type] = module
 projects[mpdbase_features][directory_name] = features
 projects[mpdbase_features][download][type] = git
-projects[mpdbase_features][download][url] = git@github.com:myplanetdigital/mpdbase_environment.git
+projects[mpdbase_features][download][url] = git@github.com:myplanetdigital/mpdbase_features.git
 projects[mpdbase_features][download][branch] = 7.x-1.x
 
 ; MODULES
