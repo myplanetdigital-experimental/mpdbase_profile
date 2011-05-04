@@ -10,9 +10,6 @@ theme = mpdbase_theme
 ; DEPENDENCIES
 
 ; Theme
-dependencies[bartik] = 0
-dependencies[] = mpdbase_theme
-dependencies[] = rubik
 variables[theme_default] = mpdbase_theme
 variables[admin_theme] = rubik
 
