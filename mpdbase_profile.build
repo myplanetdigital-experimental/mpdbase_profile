@@ -5,5 +5,5 @@ projects[drupal] = 7.0
 
 projects[mpdbase_profile][type] = profile
 projects[mpdbase_profile][download][type] = git
-projects[mpdbase_profile][download][url] = git@github.com:myplanetdigital/mpdbase_profile.git
+projects[mpdbase_profile][download][url] = https://patcon@github.com/myplanetdigital/mpdbase_profile.git
 projects[mpdbase_profile][download][branch] = 7.x-1.x
